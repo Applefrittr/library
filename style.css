@@ -46,7 +46,7 @@ div.books   {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0 2rem 3rem 2rem;
+    padding: 0 2rem 0 2rem;
 }
 
 div.book-card {
@@ -82,9 +82,27 @@ form    {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background-color: rgb(192, 64, 0);
+    height: 225px;
+    background-color: white;
     border-radius: .75rem;
 
+}
+
+input[type=text],
+input[type=number] {
+    border: none;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
+    outline: none;
+    border-bottom: 1.5px solid black;
+}
+
+input[type=checkbox] {
+    height: 1rem;
+    width: 1rem;
 }
 
 div.field-radial {
