@@ -13,18 +13,18 @@
         <form class="book-form" id="book-form">
             <div class="field">
                 <label for="book-name">Title</label>
-                <input type="text" id="book-name" name="book-name" required>
+                <input type="text" id="book-name" name="book-name" class="input-field" maxlength="30" required>
             </div>
 
             <div class="field">
                 <label for="author">Author</label>
-                <input type="text" id="author" name="author" required>
+                <input type="text" id="author" name="author" class="input-field" maxlength="30" required>
             </div>
 
             <div class="field-radial">
                 <div>
                     <label for="pages"># of Pages</label>
-                    <input type="number" id="pages" name="pages" required>
+                    <input type="number" id="pages" name="pages" class="input-field" required>
                 </div>
                 <div>
                     <label for="read">Read</label>
@@ -49,6 +49,7 @@
         <div class="books">
             <!--Books object will go here when created via the DOM-->
         </div>
+        <footer>Created by Applefrittr Aug 2022</footer>
     </div>
 </body>
 </html>
