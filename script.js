@@ -7,11 +7,13 @@ const bookForm = document.querySelector('.book-form')
 const modalCancel = document.querySelector('.cancel')
 const removeBtn = document.querySelector('.remove')
 
-function Book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
 }
 
 addBtn.addEventListener('click', () => {
